@@ -18,16 +18,33 @@
 
 // }
 
+// Console.Write("Введите ваш возраст: ");
+// int age = int.Parse(Console.ReadLine());
+// string ageGroup = age >= 18 ? "сщвершеннолетний":
+// "несовершеннолетний";
+// Console.WriteLine($"{ageGroup}");
+// Console.WriteLine("\nВведите температуру за окном (C): ");
+// double temp = double.Parse(Console.ReadLine());
+// string weather = temp >= 20 ? "тепло" : (temp >= 0 ? "прохладно" : "мороз");
+// Console.WriteLine($"За окном {weather}");
+// Console.Write("\nВведите число: ");
+// int n = int.Parse(Console.ReadLine());
+// string parity = n % 2 == 0 ? "четное" : "нечетные";
+// Console.WriteLine($"Число {n} - {parity}.");
+
+
 Console.Write("Введите ваш возраст: ");
 int age = int.Parse(Console.ReadLine());
-string ageGroup = age >= 18 ? "сщвершеннолетний":
-"несовершеннолетний";
-Console.WriteLine($"{ageGroup}");
-Console.WriteLine("\nВведите температуру за окном (C): ");
+string ageGroup = age >= 18 ? "совершеннолетний" : "несовершеннолетний";
+Console.WriteLine($"Вы {ageGroup}.");
+
+Console.Write("\nВведите температуру за окном (°C): ");
 double temp = double.Parse(Console.ReadLine());
 string weather = temp >= 20 ? "тепло" : (temp >= 0 ? "прохладно" : "мороз");
-Console.WriteLine($"За окном {weather}");
+Console.WriteLine($"За окном {weather}.");
+
+
 Console.Write("\nВведите число: ");
 int n = int.Parse(Console.ReadLine());
-string parity = n % 2 == 0 ? "четное" : "нечетные";
-Console.WriteLine($"Число {n} - {parity}.");
+string parity = n % 2 == 0 ? "чётное" : "нечётное";
+Console.WriteLine($"Число {n} – {parity}.");
