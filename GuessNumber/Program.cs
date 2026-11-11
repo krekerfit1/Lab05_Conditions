@@ -181,4 +181,83 @@
 //     }
 // }
 
+//Задание 1
 
+// Console.WriteLine("Введите пароль: ");
+// string password = Console.ReadLine();
+
+// Console.WriteLine("Подтвердите пароль: ");
+// string confirmPassword = Console.ReadLine();
+    
+// if (password == confirmPassword)
+// {
+//     Console.WriteLine("Пароль принят");
+// }
+// else
+// {
+//     Console.WriteLine("Пароль не принят");
+// }
+
+//Задание 2
+
+// Console.WriteLine("Введите ваш возраст: ");
+// int age = int.Parse(Console.ReadLine());
+
+// if (age >= 18)
+// {
+//     Console.WriteLine("Доступ разрешён");
+// }
+// else
+// {
+//     Console.WriteLine("Доступ запрещён");
+// }
+
+
+//задание 3
+
+// Console.Write("Введите первое число: ");
+// double num1 = double.Parse(Console.ReadLine());
+
+// Console.Write("Введите второе число: ");
+// double num2 = double.Parse(Console.ReadLine());
+
+// Console.Write("Введите операцию (+, -, *, /): ");
+// string operation = Console.ReadLine();
+
+// switch (operation)
+// {
+//     case "+":
+//         Console.WriteLine($"{num1} + {num2} = {num1 + num2}");
+//         break;
+//     case "-":
+//         Console.WriteLine($"{num1} - {num2} = {num1 - num2}");
+//         break;
+//     case "*":
+//         Console.WriteLine($"{num1} * {num2} = {num1 * num2}");
+//         break;
+//     case "/":
+//         if (num2 != 0) 
+//             Console.WriteLine($"{num1} / {num2} = {num1 / num2}");
+//         else
+//             Console.WriteLine("НА НОЛЬ ДЕЛИТЬ НЕЛЬЗЯ");
+//         break;
+//     default:
+//         Console.WriteLine("Неизвестная операция");
+//         break;
+// }
+
+//задание 4
+
+// Console.WriteLine("Введите три целых числа (каждое на новой строке):");
+// int sum = 0;
+
+// for (int i = 0; i < 3; i++)
+// {
+//     int currentNumber = int.Parse(Console.ReadLine());
+//     if (currentNumber > 0)
+//     {
+//         sum += currentNumber;
+//     }
+// }
+
+// Console.WriteLine($"Сумма положительных чисел: {sum}");
