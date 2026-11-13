@@ -262,4 +262,50 @@
 
 // Console.WriteLine($"Сумма положительных чисел: {sum}");
 
-///
+Console.WriteLine("Вы — отважный искатель приключений, отправившийся в Темный Лабиринт!");
+Console.WriteLine("Вы стоите перед первой дверью. Перед вами два пути:");
+Console.WriteLine("Путь А: Войти в комнату с огромным драконом.");
+Console.WriteLine("Путь B: Пойти по тёмному коридору.");
+Console.Write("Выберите путь (A или B): ");
+string path = Console.ReadLine();
+
+switch (path) {
+    case "A":
+    case "a":
+        Console.WriteLine("\nВы вошли в комнату с огромным драконом.");
+        Console.WriteLine("Дракон говорит: Кто не дышит, но живёт; хоть не нужно — много пьёт; и в жизни, и в смерти тело как лёд.");
+        Console.Write("Ваш ответ: ");
+        string answer = Console.ReadLine();
+
+        if (answer == "рыба" || answer == "Рыба") {
+            Console.WriteLine("Правильно! Дракон открывает дверь в следующую комнату.");
+        }
+        else {
+            Console.WriteLine("Неправильно! Дракон вас съел!");
+        }
+        break;
+
+    case "B":
+    case "b":
+    
+        Console.WriteLine("\nВас ждёт тёмная комната с двумя дверями:");
+        Console.WriteLine("Дверь 1");
+        Console.WriteLine("Дверь 2");
+        Console.Write("Выберите дверь (1 или 2): ");
+        string door = Console.ReadLine();
+
+        if (door == "1") {
+            Console.WriteLine("Поздравляем! Вы нашли сокровища Dungeon Master'а!");
+        }
+        else if (door == "2") {
+            Console.WriteLine("О нет! Вы попали в ловушку с ядовитыми шипами!");
+        }
+        else {
+            Console.WriteLine("Такой двери здесь нет.");
+        }
+        break;
+
+    default:
+        Console.WriteLine("Ошибка: вы выбрали несуществующий путь.");
+        break;
+}
